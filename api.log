@@ -1,0 +1,703 @@
+2025-03-28 14:52:13,787 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.30.48:5001
+2025-03-28 14:52:13,788 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 14:55:30,849 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition?pictureUrl=https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg
+2025-03-28 14:55:30,852 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '0'}
+2025-03-28 14:55:30,856 - INFO - Response: 415 UNSUPPORTED MEDIA TYPE - None
+2025-03-28 14:55:30,858 - INFO - 127.0.0.1 - - [28/Mar/2025 14:55:30] "[31m[1mPOST /pictureRecognition?pictureUrl=https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg HTTP/1.1[0m" 415 -
+2025-03-28 14:56:14,773 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition?pictureUrl=https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg
+2025-03-28 14:56:14,775 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '0'}
+2025-03-28 14:56:14,780 - INFO - Response: 400 BAD REQUEST - None
+2025-03-28 14:56:14,782 - INFO - 127.0.0.1 - - [28/Mar/2025 14:56:14] "[31m[1mPOST /pictureRecognition?pictureUrl=https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg HTTP/1.1[0m" 400 -
+2025-03-28 14:59:59,420 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.30.48:5001
+2025-03-28 14:59:59,421 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 15:00:19,373 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-03-28 15:00:19,374 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '114'}
+2025-03-28 15:00:19,375 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg'}
+2025-03-28 15:00:19,375 - ERROR - Exception on /pictureRecognition [POST]
+Traceback (most recent call last):
+  File "/opt/miniconda3/envs/pest_diagnosis/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/miniconda3/envs/pest_diagnosis/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/miniconda3/envs/pest_diagnosis/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/miniconda3/envs/pest_diagnosis/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py", line 43, in picture_recognition
+    result = pictureRecognition(pictureUrl)
+TypeError: 'module' object is not callable
+2025-03-28 15:00:19,384 - INFO - Response: 500 INTERNAL SERVER ERROR - None
+2025-03-28 15:00:19,388 - INFO - 127.0.0.1 - - [28/Mar/2025 15:00:19] "[35m[1mPOST /pictureRecognition HTTP/1.1[0m" 500 -
+2025-03-28 15:01:08,450 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-03-28 15:01:08,452 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '114'}
+2025-03-28 15:01:08,456 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg'}
+2025-03-28 15:01:08,457 - ERROR - Exception on /pictureRecognition [POST]
+Traceback (most recent call last):
+  File "/opt/miniconda3/envs/pest_diagnosis/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/miniconda3/envs/pest_diagnosis/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/miniconda3/envs/pest_diagnosis/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/miniconda3/envs/pest_diagnosis/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py", line 43, in picture_recognition
+    result = pictureRecognition(pictureUrl)
+TypeError: 'module' object is not callable
+2025-03-28 15:01:08,460 - INFO - Response: 500 INTERNAL SERVER ERROR - None
+2025-03-28 15:01:08,463 - INFO - 127.0.0.1 - - [28/Mar/2025 15:01:08] "[35m[1mPOST /pictureRecognition HTTP/1.1[0m" 500 -
+2025-03-28 15:04:47,480 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-03-28 15:04:47,480 - INFO - Headers: {'Host': '127.0.0.1:5001', 'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '115'}
+2025-03-28 15:04:47,481 - INFO - Response: 400 BAD REQUEST - None
+2025-03-28 15:04:47,482 - INFO - 127.0.0.1 - - [28/Mar/2025 15:04:47] "[31m[1mPOST /pictureRecognition HTTP/1.1[0m" 400 -
+2025-03-28 15:06:25,991 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.30.48:5000
+2025-03-28 15:06:25,991 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 15:08:51,731 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 15:08:51,732 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 15:09:08,957 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 15:09:08,957 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 15:09:08,959 - INFO -  * Restarting with stat
+2025-03-28 15:09:09,777 - WARNING -  * Debugger is active!
+2025-03-28 15:09:09,796 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 15:09:38,239 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-03-28 15:09:38,239 - INFO - Headers: {'Host': '127.0.0.1:5001', 'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '115'}
+2025-03-28 15:09:38,242 - INFO - Response: 400 BAD REQUEST - None
+2025-03-28 15:09:38,242 - INFO - 127.0.0.1 - - [28/Mar/2025 15:09:38] "[31m[1mPOST /pictureRecognition HTTP/1.1[0m" 400 -
+2025-03-28 15:10:38,582 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/test1.py', reloading
+2025-03-28 15:10:38,800 - INFO -  * Restarting with stat
+2025-03-28 15:10:39,919 - WARNING -  * Debugger is active!
+2025-03-28 15:10:39,940 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 15:10:41,330 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-03-28 15:10:41,330 - INFO - Headers: {'Host': '127.0.0.1:5001', 'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '115'}
+2025-03-28 15:10:41,330 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg'}
+2025-03-28 15:10:41,337 - INFO - 127.0.0.1 - - [28/Mar/2025 15:10:41] "[35m[1mPOST /pictureRecognition HTTP/1.1[0m" 500 -
+2025-03-28 15:11:56,773 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-03-28 15:11:56,773 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '121'}
+2025-03-28 15:11:56,773 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg'}
+2025-03-28 15:11:56,779 - INFO - 127.0.0.1 - - [28/Mar/2025 15:11:56] "[35m[1mPOST /pictureRecognition HTTP/1.1[0m" 500 -
+2025-03-28 15:14:20,183 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 15:14:20,645 - INFO -  * Restarting with stat
+2025-03-28 15:14:21,670 - WARNING -  * Debugger is active!
+2025-03-28 15:14:21,697 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 15:14:35,389 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 15:14:35,390 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 15:14:35,392 - INFO -  * Restarting with stat
+2025-03-28 15:14:36,174 - WARNING -  * Debugger is active!
+2025-03-28 15:14:36,184 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 15:14:41,975 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-03-28 15:14:41,975 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '121'}
+2025-03-28 15:14:41,976 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg'}
+2025-03-28 15:14:41,997 - INFO - 127.0.0.1 - - [28/Mar/2025 15:14:41] "[35m[1mPOST /pictureRecognition HTTP/1.1[0m" 500 -
+2025-03-28 15:15:44,880 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 15:15:45,262 - INFO -  * Restarting with stat
+2025-03-28 15:15:46,749 - WARNING -  * Debugger is active!
+2025-03-28 15:15:46,760 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 15:16:17,085 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/pictureRecognition.py', reloading
+2025-03-28 15:16:17,242 - INFO -  * Restarting with stat
+2025-03-28 15:16:18,221 - WARNING -  * Debugger is active!
+2025-03-28 15:16:18,235 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 15:16:23,310 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 15:16:23,658 - INFO -  * Restarting with stat
+2025-03-28 15:16:25,102 - WARNING -  * Debugger is active!
+2025-03-28 15:16:25,111 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 15:16:37,339 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 15:16:37,339 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 15:16:37,341 - INFO -  * Restarting with stat
+2025-03-28 15:16:38,243 - WARNING -  * Debugger is active!
+2025-03-28 15:16:38,252 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 15:16:46,979 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-03-28 15:16:46,979 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '121'}
+2025-03-28 15:16:46,980 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg'}
+2025-03-28 15:16:49,503 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-03-28 15:16:49,521 - INFO - Response: 200 OK - None
+2025-03-28 15:16:49,522 - INFO - 127.0.0.1 - - [28/Mar/2025 15:16:49] "POST /pictureRecognition HTTP/1.1" 200 -
+2025-03-28 15:19:08,621 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/pictureRecognition.py', reloading
+2025-03-28 15:19:08,875 - INFO -  * Restarting with stat
+2025-03-28 15:19:15,960 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 15:19:15,961 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 15:19:15,963 - INFO -  * Restarting with stat
+2025-03-28 15:19:16,821 - WARNING -  * Debugger is active!
+2025-03-28 15:19:16,831 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 15:19:22,890 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-03-28 15:19:22,891 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '121'}
+2025-03-28 15:19:22,891 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg'}
+2025-03-28 15:19:25,349 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-03-28 15:19:25,361 - INFO - Response: 200 OK - None
+2025-03-28 15:19:25,362 - INFO - 127.0.0.1 - - [28/Mar/2025 15:19:25] "POST /pictureRecognition HTTP/1.1" 200 -
+2025-03-28 16:13:07,130 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 16:13:07,131 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 16:13:07,133 - INFO -  * Restarting with stat
+2025-03-28 16:13:08,210 - WARNING -  * Debugger is active!
+2025-03-28 16:13:08,253 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 16:16:15,818 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-03-28 16:16:15,824 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '189'}
+2025-03-28 16:16:15,834 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest":"小麦","diseases":[{"小麦蚜虫":"0.7"},{"小麦锈病":"0.6"},{"小麦白粉病":"0.5"}]}'}
+2025-03-28 16:16:15,907 - INFO - Response: 200 OK - None
+2025-03-28 16:16:15,913 - INFO - 127.0.0.1 - - [28/Mar/2025 16:16:15] "POST /getPests HTTP/1.1" 200 -
+2025-03-28 16:16:59,598 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-03-28 16:16:59,600 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '189'}
+2025-03-28 16:16:59,600 - INFO - Body: {'pestsCategory': '小麦', 'pictureRecognitionResult': '{"pest":"水稻","diseases":[{"小麦蚜虫":"0.7"},{"小麦锈病":"0.6"},{"小麦白粉病":"0.5"}]}'}
+2025-03-28 16:16:59,669 - INFO - Response: 200 OK - None
+2025-03-28 16:16:59,669 - INFO - 127.0.0.1 - - [28/Mar/2025 16:16:59] "POST /getPests HTTP/1.1" 200 -
+2025-03-28 16:17:19,939 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-03-28 16:17:19,940 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '189'}
+2025-03-28 16:17:19,941 - INFO - Body: {'pestsCategory': '小麦', 'pictureRecognitionResult': '{"pest":"小麦","diseases":[{"小麦蚜虫":"0.7"},{"小麦锈病":"0.6"},{"小麦白粉病":"0.5"}]}'}
+2025-03-28 16:17:19,942 - INFO - Response: 200 OK - {'code': 200, 'message': '执行Rag', 'success': True}
+2025-03-28 16:17:19,942 - INFO - 127.0.0.1 - - [28/Mar/2025 16:17:19] "POST /getPests HTTP/1.1" 200 -
+2025-03-28 16:17:54,309 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 16:17:55,070 - INFO -  * Restarting with stat
+2025-03-28 16:17:56,435 - WARNING -  * Debugger is active!
+2025-03-28 16:17:56,471 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 16:18:00,761 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-03-28 16:18:00,762 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '189'}
+2025-03-28 16:18:00,762 - INFO - Body: {'pestsCategory': '玉米', 'pictureRecognitionResult': '{"pest":"小麦","diseases":[{"小麦蚜虫":"0.7"},{"小麦锈病":"0.6"},{"小麦白粉病":"0.5"}]}'}
+2025-03-28 16:18:00,763 - INFO - Response: 200 OK - {'code': 201, 'message': '传入作物类型不正确', 'success': True}
+2025-03-28 16:18:00,764 - INFO - 127.0.0.1 - - [28/Mar/2025 16:18:00] "POST /getPests HTTP/1.1" 200 -
+2025-03-28 16:19:21,464 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 16:19:21,595 - INFO -  * Restarting with stat
+2025-03-28 16:19:23,506 - WARNING -  * Debugger is active!
+2025-03-28 16:19:23,521 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 16:20:12,018 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 16:20:12,187 - INFO -  * Restarting with stat
+2025-03-28 16:20:13,834 - WARNING -  * Debugger is active!
+2025-03-28 16:20:13,851 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 16:21:26,487 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 16:21:26,659 - INFO -  * Restarting with stat
+2025-03-28 16:21:27,469 - WARNING -  * Debugger is active!
+2025-03-28 16:21:27,509 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 16:22:36,229 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 16:22:36,437 - INFO -  * Restarting with stat
+2025-03-28 16:22:37,895 - WARNING -  * Debugger is active!
+2025-03-28 16:22:37,909 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 16:22:54,108 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 16:22:54,371 - INFO -  * Restarting with stat
+2025-03-28 16:54:47,702 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 16:54:48,625 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 16:54:49,080 - WARNING - Embedding attempt failed: Numpy is not available
+2025-03-28 16:54:53,108 - WARNING - Embedding attempt failed: Numpy is not available
+2025-03-28 16:54:57,134 - WARNING - Embedding attempt failed: Numpy is not available
+2025-03-28 16:57:00,825 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 16:57:01,913 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 16:57:02,711 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 16:57:10,426 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 16:57:10,431 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 16:57:10,433 - INFO -  * Restarting with stat
+2025-03-28 16:57:24,232 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 16:57:24,773 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 16:57:24,954 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 16:57:25,617 - WARNING -  * Debugger is active!
+2025-03-28 16:57:25,636 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 17:01:22,241 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 17:01:26,494 - INFO -  * Restarting with stat
+2025-03-28 17:01:50,787 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 17:01:51,313 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 17:01:51,661 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 17:01:52,271 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 17:01:52,271 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 17:01:52,273 - INFO -  * Restarting with stat
+2025-03-28 17:02:08,042 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 17:02:08,597 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 17:02:08,753 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 17:02:09,559 - WARNING -  * Debugger is active!
+2025-03-28 17:02:09,595 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 17:04:07,917 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 17:04:08,465 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 17:04:08,612 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 17:04:09,446 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 17:04:09,446 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 17:04:09,448 - INFO -  * Restarting with stat
+2025-03-28 17:04:27,762 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 17:04:33,257 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 17:04:34,731 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 17:04:39,455 - WARNING -  * Debugger is active!
+2025-03-28 17:04:39,541 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 17:04:39,966 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-03-28 17:04:39,967 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '189'}
+2025-03-28 17:04:39,971 - INFO - Body: {'pestsCategory': '小麦', 'pictureRecognitionResult': '{"pest":"小麦","diseases":[{"小麦蚜虫":"0.7"},{"小麦锈病":"0.6"},{"小麦白粉病":"0.5"}]}'}
+2025-03-28 17:04:41,767 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-28 17:04:57,039 - INFO - Response: 200 OK - None
+2025-03-28 17:04:57,041 - INFO - 127.0.0.1 - - [28/Mar/2025 17:04:57] "POST /getPests HTTP/1.1" 200 -
+2025-03-28 17:07:10,827 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 17:07:13,910 - INFO -  * Restarting with stat
+2025-03-28 17:07:24,150 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 17:07:24,606 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 17:07:24,735 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 17:07:25,279 - WARNING -  * Debugger is active!
+2025-03-28 17:07:25,295 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 17:07:51,770 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-03-28 17:07:55,344 - INFO -  * Restarting with stat
+2025-03-28 17:10:54,160 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 17:10:54,794 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 17:10:55,240 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 17:10:56,159 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 17:10:56,160 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 17:10:56,164 - INFO -  * Restarting with stat
+2025-03-28 17:11:10,026 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 17:11:15,095 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 17:11:16,065 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 17:11:19,014 - WARNING -  * Debugger is active!
+2025-03-28 17:11:19,130 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 17:11:19,402 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-03-28 17:11:19,403 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '189'}
+2025-03-28 17:11:19,404 - INFO - Body: {'pestsCategory': '小麦', 'pictureRecognitionResult': '{"pest":"小麦","diseases":[{"小麦蚜虫":"0.7"},{"小麦锈病":"0.6"},{"小麦白粉病":"0.5"}]}'}
+2025-03-28 17:11:19,414 - INFO - Response: 200 OK - {'code': 201, 'message': 'JSON解析错误', 'success': True}
+2025-03-28 17:11:19,419 - INFO - 127.0.0.1 - - [28/Mar/2025 17:11:19] "POST /getPests HTTP/1.1" 200 -
+2025-03-28 17:11:51,156 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-03-28 17:11:51,157 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '189'}
+2025-03-28 17:11:51,157 - INFO - Body: {'pestsCategory': '小麦', 'pictureRecognitionResult': '{"pest":"小麦","diseases":[{"小麦蚜虫":"0.7"},{"小麦锈病":"0.6"},{"小麦白粉病":"0.5"}]}'}
+2025-03-28 17:11:51,158 - INFO - Response: 200 OK - {'code': 201, 'message': 'JSON解析错误', 'success': True}
+2025-03-28 17:11:51,159 - INFO - 127.0.0.1 - - [28/Mar/2025 17:11:51] "POST /getPests HTTP/1.1" 200 -
+2025-03-28 17:18:04,987 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 17:18:05,516 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 17:18:05,958 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 17:18:06,648 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 17:18:06,648 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 17:18:06,649 - INFO -  * Restarting with stat
+2025-03-28 17:19:15,597 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 17:19:17,711 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 17:19:18,447 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 17:19:23,433 - WARNING -  * Debugger is active!
+2025-03-28 17:19:23,530 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 17:19:23,931 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-03-28 17:19:23,936 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '120'}
+2025-03-28 17:19:23,937 - INFO - Body: {'pestsCategory': '小麦', 'pictureRecognitionResult': '{"pest":"小麦","diseases":"小麦锈病"}'}
+2025-03-28 17:19:25,744 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-28 17:19:44,763 - INFO - Response: 200 OK - None
+2025-03-28 17:19:44,784 - INFO - 127.0.0.1 - - [28/Mar/2025 17:19:44] "POST /getPests HTTP/1.1" 200 -
+2025-03-28 17:25:48,264 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 17:25:48,794 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 17:25:49,252 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 17:25:49,897 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-28 17:25:49,897 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-28 17:25:49,898 - INFO -  * Restarting with stat
+2025-03-28 17:25:59,373 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-03-28 17:25:59,841 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-03-28 17:25:59,992 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-28 17:26:00,637 - WARNING -  * Debugger is active!
+2025-03-28 17:26:00,653 - INFO -  * Debugger PIN: 131-083-008
+2025-03-28 17:28:08,184 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-03-28 17:28:08,186 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '120'}
+2025-03-28 17:28:08,187 - INFO - Body: {'pestsCategory': '小麦', 'pictureRecognitionResult': '{"pest":"小麦","diseases":"小麦锈病"}'}
+2025-03-28 17:28:10,702 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-28 17:28:35,448 - INFO - Response: 200 OK - None
+2025-03-28 17:28:35,456 - INFO - 127.0.0.1 - - [28/Mar/2025 17:28:35] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 14:52:53,541 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 14:52:54,095 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 14:52:54,572 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 14:52:55,261 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 14:52:55,261 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 14:52:55,263 - INFO -  * Restarting with stat
+2025-04-02 14:53:06,784 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 14:53:07,284 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 14:53:08,469 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 14:53:11,149 - WARNING -  * Debugger is active!
+2025-04-02 14:53:11,183 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 14:53:20,556 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-04-02 14:53:20,557 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '121'}
+2025-04-02 14:53:20,557 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MEMBER/1784489769980743680//5e13e97e47d84a05aa2e5834b46a621a.jpg'}
+2025-04-02 14:53:22,873 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 14:53:22,890 - INFO - Response: 200 OK - None
+2025-04-02 14:53:22,896 - INFO - 127.0.0.1 - - [02/Apr/2025 14:53:22] "POST /pictureRecognition HTTP/1.1" 200 -
+2025-04-02 14:54:46,501 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-04-02 14:54:46,501 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '102'}
+2025-04-02 14:54:46,502 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MANAGER//9fa3020e98294180aa6e7e620fc248ec.jpg'}
+2025-04-02 14:54:49,415 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 14:54:49,419 - INFO - Response: 200 OK - None
+2025-04-02 14:54:49,419 - INFO - 127.0.0.1 - - [02/Apr/2025 14:54:49] "POST /pictureRecognition HTTP/1.1" 200 -
+2025-04-02 14:55:22,013 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-04-02 14:55:22,017 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '103'}
+2025-04-02 14:55:22,023 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MANAGER//9082f4e38f2a432da1b7f9cf64a63af7.jpeg'}
+2025-04-02 14:55:24,291 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 14:55:24,300 - INFO - Response: 200 OK - None
+2025-04-02 14:55:24,301 - INFO - 127.0.0.1 - - [02/Apr/2025 14:55:24] "POST /pictureRecognition HTTP/1.1" 200 -
+2025-04-02 14:55:35,136 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-04-02 14:55:35,139 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '103'}
+2025-04-02 14:55:35,144 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MANAGER//9082f4e38f2a432da1b7f9cf64a63af7.jpeg'}
+2025-04-02 14:55:36,753 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 14:55:36,756 - INFO - Response: 200 OK - None
+2025-04-02 14:55:36,758 - INFO - 127.0.0.1 - - [02/Apr/2025 14:55:36] "POST /pictureRecognition HTTP/1.1" 200 -
+2025-04-02 14:56:42,813 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-04-02 14:56:42,816 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '102'}
+2025-04-02 14:56:42,818 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MANAGER//1facb2b1023341d9888af8fbcba0cbca.png'}
+2025-04-02 14:56:45,036 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 14:56:45,050 - INFO - Response: 200 OK - None
+2025-04-02 14:56:45,051 - INFO - 127.0.0.1 - - [02/Apr/2025 14:56:45] "POST /pictureRecognition HTTP/1.1" 200 -
+2025-04-02 15:50:50,658 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 15:50:51,182 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 15:50:51,597 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 15:50:52,241 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 15:50:52,242 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 15:50:52,243 - INFO -  * Restarting with stat
+2025-04-02 15:51:04,202 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 15:51:04,943 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 15:51:05,384 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 15:51:07,286 - WARNING -  * Debugger is active!
+2025-04-02 15:51:07,319 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 15:51:12,874 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-04-02 15:51:12,875 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '102'}
+2025-04-02 15:51:12,875 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MANAGER//1facb2b1023341d9888af8fbcba0cbca.png'}
+2025-04-02 15:51:16,665 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 15:51:16,680 - INFO - Response: 200 OK - None
+2025-04-02 15:51:16,690 - INFO - 127.0.0.1 - - [02/Apr/2025 15:51:16] "POST /pictureRecognition HTTP/1.1" 200 -
+2025-04-02 15:51:43,820 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 15:51:43,820 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 15:51:43,822 - INFO - Body: {'pestsCategory': '小麦', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 15:51:53,850 - INFO - Response: 200 OK - None
+2025-04-02 15:51:53,850 - INFO - 127.0.0.1 - - [02/Apr/2025 15:51:53] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:00:32,514 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:00:33,067 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:00:33,519 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:00:34,202 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 16:00:34,202 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 16:00:34,204 - INFO -  * Restarting with stat
+2025-04-02 16:01:38,110 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:01:38,915 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:01:39,530 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:01:40,640 - WARNING -  * Debugger is active!
+2025-04-02 16:01:40,658 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 16:01:40,722 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:01:40,723 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 16:01:40,727 - INFO - Body: {'pestsCategory': '小麦', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:01:40,836 - INFO - Response: 200 OK - None
+2025-04-02 16:01:40,848 - INFO - 127.0.0.1 - - [02/Apr/2025 16:01:40] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:01:47,882 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-04-02 16:01:58,775 - INFO -  * Restarting with stat
+2025-04-02 16:02:13,936 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:02:14,925 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:02:15,059 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:02:15,670 - WARNING -  * Debugger is active!
+2025-04-02 16:02:15,696 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 16:03:30,808 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:03:30,810 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 16:03:30,812 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:03:32,800 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:03:55,612 - INFO - Response: 200 OK - {'code': 201, 'message': 'JSON解析错误', 'success': True}
+2025-04-02 16:03:55,627 - INFO - 127.0.0.1 - - [02/Apr/2025 16:03:55] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:08:36,922 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:08:37,825 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:08:38,370 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:08:39,196 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 16:08:39,196 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 16:08:39,197 - INFO -  * Restarting with stat
+2025-04-02 16:09:04,790 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:09:05,381 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:09:05,533 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:09:06,598 - WARNING -  * Debugger is active!
+2025-04-02 16:09:06,615 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 16:09:06,650 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:09:06,651 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 16:09:06,651 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:09:10,184 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:09:27,657 - INFO - Response: 200 OK - {'code': 201, 'message': 'JSON解析错误', 'success': True}
+2025-04-02 16:09:27,660 - INFO - 127.0.0.1 - - [02/Apr/2025 16:09:27] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:10:48,266 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:10:48,732 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:10:48,879 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:10:49,650 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 16:10:49,650 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 16:10:49,652 - INFO -  * Restarting with stat
+2025-04-02 16:11:01,238 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:11:02,099 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:11:02,242 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:11:02,942 - WARNING -  * Debugger is active!
+2025-04-02 16:11:02,958 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 16:11:13,927 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:11:13,927 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 16:11:13,927 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:11:16,738 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:11:35,130 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:11:58,680 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:12:07,827 - INFO - Response: 200 OK - None
+2025-04-02 16:12:07,834 - INFO - 127.0.0.1 - - [02/Apr/2025 16:12:07] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:15:17,219 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:15:17,797 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:15:18,245 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:15:19,650 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 16:15:19,651 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 16:15:19,654 - INFO -  * Restarting with stat
+2025-04-02 16:15:46,872 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:15:48,386 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:15:48,959 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:15:50,382 - WARNING -  * Debugger is active!
+2025-04-02 16:15:50,421 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 16:15:50,581 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:15:50,582 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 16:15:50,582 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:15:51,411 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:16:10,745 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:16:33,833 - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:16:41,014 - INFO - Response: 200 OK - None
+2025-04-02 16:16:41,016 - INFO - 127.0.0.1 - - [02/Apr/2025 16:16:41] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:22:09,157 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:22:09,681 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:22:10,155 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:22:10,754 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 16:22:10,754 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 16:22:10,756 - INFO -  * Restarting with stat
+2025-04-02 16:22:20,275 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:22:20,741 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:22:20,852 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:22:21,500 - WARNING -  * Debugger is active!
+2025-04-02 16:22:21,515 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 16:22:32,710 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:22:32,713 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 16:22:32,714 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:22:37,385 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:22:44,151 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:22:46,002 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:22:46,224 - INFO - Response: 200 OK - {'code': 201, 'message': 'JSON解析错误', 'success': True}
+2025-04-02 16:22:46,236 - INFO - 127.0.0.1 - - [02/Apr/2025 16:22:46] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:28:14,098 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:28:14,607 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:28:15,084 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:28:15,732 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 16:28:15,732 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 16:28:15,734 - INFO -  * Restarting with stat
+2025-04-02 16:28:55,768 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:29:01,009 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:29:02,690 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:29:09,580 - WARNING -  * Debugger is active!
+2025-04-02 16:29:09,729 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 16:29:10,049 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:29:10,052 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 16:29:10,056 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:29:14,322 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:29:24,428 - INFO - Response: 200 OK - {'code': 201, 'message': 'JSON解析错误', 'success': True}
+2025-04-02 16:29:24,440 - INFO - 127.0.0.1 - - [02/Apr/2025 16:29:24] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:30:32,169 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:30:32,171 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 16:30:32,172 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:30:36,296 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:30:41,802 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:30:44,473 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:30:45,316 - INFO - Response: 200 OK - {'code': 201, 'message': 'JSON解析错误', 'success': True}
+2025-04-02 16:30:45,321 - INFO - 127.0.0.1 - - [02/Apr/2025 16:30:45] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:31:40,508 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-04-02 16:31:57,909 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:31:58,384 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:31:58,741 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:31:59,346 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 16:31:59,346 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 16:31:59,347 - INFO -  * Restarting with stat
+2025-04-02 16:32:22,227 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:32:25,913 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:32:26,655 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:32:30,193 - WARNING -  * Debugger is active!
+2025-04-02 16:32:30,275 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 16:32:30,649 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:32:30,649 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 16:32:30,649 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:32:34,466 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:32:38,900 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:32:41,323 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:32:41,427 - INFO - Response: 200 OK - None
+2025-04-02 16:32:41,440 - INFO - 127.0.0.1 - - [02/Apr/2025 16:32:41] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:33:27,471 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-04-02 16:33:28,960 - INFO -  * Restarting with stat
+2025-04-02 16:33:47,642 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:33:48,257 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:33:48,495 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:33:49,324 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 16:33:49,324 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 16:33:49,326 - INFO -  * Restarting with stat
+2025-04-02 16:34:52,261 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:34:57,267 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:34:58,467 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:35:04,975 - WARNING -  * Debugger is active!
+2025-04-02 16:35:05,091 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 16:35:05,486 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:35:05,486 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 16:35:05,487 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:35:08,675 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:35:15,610 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:35:17,556 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:35:17,791 - INFO - Response: 200 OK - None
+2025-04-02 16:35:17,798 - INFO - 127.0.0.1 - - [02/Apr/2025 16:35:17] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:35:38,207 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:35:38,207 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '304'}
+2025-04-02 16:35:38,208 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:35:43,037 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:35:47,999 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:35:50,141 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:35:50,336 - INFO - Response: 200 OK - None
+2025-04-02 16:35:50,340 - INFO - 127.0.0.1 - - [02/Apr/2025 16:35:50] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:37:18,347 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:37:18,351 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '310'}
+2025-04-02 16:37:18,351 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "水稻霜霉病","accuracy_rate": "0.8"}, {"diseases_name": "水稻赤枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 16:37:24,965 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:37:31,254 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:37:33,673 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 16:37:33,816 - INFO - Response: 200 OK - None
+2025-04-02 16:37:33,817 - INFO - 127.0.0.1 - - [02/Apr/2025 16:37:33] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:39:01,437 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:39:01,439 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '107'}
+2025-04-02 16:39:01,439 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "无","diseases": null}'}
+2025-04-02 16:39:01,545 - INFO - Response: 200 OK - None
+2025-04-02 16:39:01,546 - INFO - 127.0.0.1 - - [02/Apr/2025 16:39:01] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:40:52,513 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-04-02 16:40:56,602 - INFO -  * Restarting with stat
+2025-04-02 16:41:18,188 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:41:19,000 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:41:19,186 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:41:20,018 - WARNING -  * Debugger is active!
+2025-04-02 16:41:20,047 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 16:41:30,289 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-04-02 16:41:33,185 - INFO -  * Restarting with stat
+2025-04-02 16:56:46,924 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:56:47,853 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:56:48,449 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:56:49,222 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 16:56:49,222 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 16:56:49,225 - INFO -  * Restarting with stat
+2025-04-02 16:57:38,381 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 16:57:40,299 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 16:57:41,173 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 16:57:46,417 - WARNING -  * Debugger is active!
+2025-04-02 16:57:46,473 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 16:57:46,809 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:57:46,809 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '107'}
+2025-04-02 16:57:46,810 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "无","diseases": null}'}
+2025-04-02 16:57:56,830 - INFO - Response: 200 OK - {'code': 201, 'message': 'JSON解析错误', 'success': True}
+2025-04-02 16:57:56,832 - INFO - 127.0.0.1 - - [02/Apr/2025 16:57:56] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:58:16,751 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:58:16,752 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '107'}
+2025-04-02 16:58:16,752 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "无","diseases": null}'}
+2025-04-02 16:58:16,945 - INFO - Response: 200 OK - {'code': 201, 'message': 'JSON解析错误', 'success': True}
+2025-04-02 16:58:16,948 - INFO - 127.0.0.1 - - [02/Apr/2025 16:58:16] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 16:58:43,755 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 16:58:43,755 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '107'}
+2025-04-02 16:58:43,756 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "无","diseases": null}'}
+2025-04-02 16:58:44,157 - INFO - Response: 200 OK - {'code': 201, 'message': 'JSON解析错误', 'success': True}
+2025-04-02 16:58:44,157 - INFO - 127.0.0.1 - - [02/Apr/2025 16:58:44] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 17:00:26,109 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 17:00:26,111 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '310'}
+2025-04-02 17:00:26,112 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "水稻霜霉病","accuracy_rate": "0.8"}, {"diseases_name": "水稻赤枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 17:00:34,556 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:00:42,731 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:00:44,751 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:00:44,831 - INFO - Response: 200 OK - None
+2025-04-02 17:00:44,833 - INFO - 127.0.0.1 - - [02/Apr/2025 17:00:44] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 17:02:03,561 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-04-02 17:02:08,991 - INFO -  * Restarting with stat
+2025-04-02 17:02:23,069 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 17:02:23,903 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 17:02:24,793 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 17:02:26,448 - WARNING -  * Debugger is active!
+2025-04-02 17:02:26,483 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 17:05:53,610 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 17:05:54,168 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 17:05:54,653 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 17:05:55,301 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 17:05:55,301 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 17:05:55,302 - INFO -  * Restarting with stat
+2025-04-02 17:06:05,059 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 17:06:05,534 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 17:06:05,653 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 17:06:06,279 - WARNING -  * Debugger is active!
+2025-04-02 17:06:06,297 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 17:08:24,332 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 17:08:24,335 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '310'}
+2025-04-02 17:08:24,335 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "水稻霜霉病","accuracy_rate": "0.8"}, {"diseases_name": "水稻赤枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 17:08:32,230 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:08:41,143 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:08:42,876 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:08:43,030 - INFO - Response: 200 OK - None
+2025-04-02 17:08:43,036 - INFO - 127.0.0.1 - - [02/Apr/2025 17:08:43] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 17:11:07,163 - INFO -  * Detected change in '/Users/yangliu/PycharmProjects/Pest_Diagnosis/ragFlaskApp.py', reloading
+2025-04-02 17:11:11,835 - INFO -  * Restarting with stat
+2025-04-02 17:12:37,876 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 17:12:40,968 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 17:12:42,311 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 17:12:47,517 - WARNING -  * Debugger is active!
+2025-04-02 17:12:47,671 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 17:12:47,976 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 17:12:47,978 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '307'}
+2025-04-02 17:12:47,981 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "无","diseases": [{"diseases_name": "水稻霜霉病","accuracy_rate": "0.8"}, {"diseases_name": "水稻赤枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 17:12:48,609 - INFO - Response: 200 OK - None
+2025-04-02 17:12:48,612 - INFO - 127.0.0.1 - - [02/Apr/2025 17:12:48] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 17:15:03,861 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 17:15:04,808 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 17:15:04,941 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 17:15:05,549 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-02 17:15:05,549 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-02 17:15:05,551 - INFO -  * Restarting with stat
+2025-04-02 17:15:19,350 - INFO - Load pretrained SentenceTransformer: ./LLM/BAAI/bge-small-zh-v1.5
+2025-04-02 17:15:20,077 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-04-02 17:15:20,230 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-02 17:15:21,110 - WARNING -  * Debugger is active!
+2025-04-02 17:15:21,130 - INFO -  * Debugger PIN: 131-083-008
+2025-04-02 17:15:38,053 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 17:15:38,058 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '307'}
+2025-04-02 17:15:38,060 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "无","diseases": [{"diseases_name": "水稻霜霉病","accuracy_rate": "0.8"}, {"diseases_name": "水稻赤枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 17:15:38,174 - INFO - Response: 200 OK - None
+2025-04-02 17:15:38,175 - INFO - 127.0.0.1 - - [02/Apr/2025 17:15:38] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 17:15:59,501 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 17:15:59,502 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '310'}
+2025-04-02 17:15:59,502 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "水稻霜霉病","accuracy_rate": "0.8"}, {"diseases_name": "水稻赤枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻螟虫","accuracy_rate": "0.6"}]}'}
+2025-04-02 17:16:05,918 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:16:13,583 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:16:15,696 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:16:15,915 - INFO - Response: 200 OK - None
+2025-04-02 17:16:15,920 - INFO - 127.0.0.1 - - [02/Apr/2025 17:16:15] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 17:16:33,150 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-04-02 17:16:33,152 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '102'}
+2025-04-02 17:16:33,157 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MANAGER//1facb2b1023341d9888af8fbcba0cbca.png'}
+2025-04-02 17:16:37,408 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:16:37,422 - INFO - Response: 200 OK - None
+2025-04-02 17:16:37,426 - INFO - 127.0.0.1 - - [02/Apr/2025 17:16:37] "POST /pictureRecognition HTTP/1.1" 200 -
+2025-04-02 17:17:00,311 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 17:17:00,311 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '302'}
+2025-04-02 17:17:00,312 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "稻飞虱","accuracy_rate": "0.6"}]} '}
+2025-04-02 17:17:02,772 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:17:08,995 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:17:11,269 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:17:11,351 - INFO - Response: 200 OK - None
+2025-04-02 17:17:11,353 - INFO - 127.0.0.1 - - [02/Apr/2025 17:17:11] "POST /getPests HTTP/1.1" 200 -
+2025-04-02 17:17:44,387 - INFO - Request: POST http://127.0.0.1:5001/pictureRecognition
+2025-04-02 17:17:44,387 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '102'}
+2025-04-02 17:17:44,388 - INFO - Body: {'pictureUrl': 'https://nf-file.hbatg.com/nfshop/MANAGER//787da99578c74ed1a53fedffe832bc50.png'}
+2025-04-02 17:17:48,422 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:17:48,434 - INFO - Response: 200 OK - None
+2025-04-02 17:17:48,435 - INFO - 127.0.0.1 - - [02/Apr/2025 17:17:48] "POST /pictureRecognition HTTP/1.1" 200 -
+2025-04-02 17:18:09,846 - INFO - Request: POST http://127.0.0.1:5001/getPests
+2025-04-02 17:18:09,848 - INFO - Headers: {'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 'Content-Type': 'application/json; charset=utf-8', 'Accept': '*/*', 'Host': '127.0.0.1:5001', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '318'}
+2025-04-02 17:18:09,848 - INFO - Body: {'pestsCategory': '水稻', 'pictureRecognitionResult': '{"pest": "水稻","diseases": [{"diseases_name": "水稻稻瘟病","accuracy_rate": "0.8"}, {"diseases_name": "水稻纹枯病","accuracy_rate": "0.7"}, {"diseases_name": "水稻白叶枯病","accuracy_rate": "0.6"}]} '}
+2025-04-02 17:18:12,953 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:18:19,644 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:18:24,155 - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 17:18:24,220 - INFO - Response: 200 OK - None
+2025-04-02 17:18:24,221 - INFO - 127.0.0.1 - - [02/Apr/2025 17:18:24] "POST /getPests HTTP/1.1" 200 -
