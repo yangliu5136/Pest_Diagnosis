@@ -376,5 +376,4 @@ if __name__ == "__main__":
     rice_index = init_storage(Config.RICE_COLLECTION_NAME, Config.RICE_FILE_PATH)
     wheat_index = init_storage(Config.WHEAT_COLLECTION_NAME, Config.WHEAT_FILE_PATH)
 
-
     app.run(host='127.0.0.1', port=5001, debug=True)
