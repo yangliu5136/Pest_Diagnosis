@@ -394,4 +394,4 @@ if __name__ == "__main__":
     wheat_index = init_storage(Config.WHEAT_COLLECTION_NAME, Config.WHEAT_FILE_PATH)
     corn_index = init_storage(Config.CORN_COLLECTION_NAME, Config.CORN_FILE_PATH)
 
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True)
