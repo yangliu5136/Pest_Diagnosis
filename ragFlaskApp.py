@@ -29,6 +29,7 @@ logging.basicConfig(
 # 作物默认的3条病虫害数据
 rice_default_pests = ("稻瘟病", "水稻纹枯病", "水稻白叶枯病")
 wheat_default_pests = ("小麦锈病", "小麦白粉病", "小麦赤霉病")
+corn_default_pests = ("玉米大斑病", "玉米小斑病", "玉米锈病")
 
 
 @app.before_request
@@ -52,6 +53,7 @@ class Config:
     EMBEDING_MEDEL_PATH = './LLM/BAAI/bge-small-zh-v1.5'
     RICE_FILE_PATH = './data/rice_pests.csv'
     WHEAT_FILE_PATH = './data/wheat_pests.csv'
+    CORN_FILE_PATH = './data/corn_pests.csv'
 
     # deepseek 配置信息
     # API_BASE = "https://api.deepseek.com/v1"  # vLLM的默认端点
@@ -82,6 +84,7 @@ class Config:
 
     RICE_COLLECTION_NAME = "rice_pests"
     WHEAT_COLLECTION_NAME = "wheat_pests"
+    CORN_COLLECTION_NAME = "corn_pests"
 
     TOP_K = 1
 
@@ -282,7 +285,7 @@ def get_pests():
     # 传入图片识别返回的结果
     pictureRecognitionResult = request.json.get('pictureRecognitionResult')
     # 先判断传入作物类别是否正确
-    if pestsCategory not in ("水稻", "小麦"):
+    if pestsCategory not in ("水稻", "小麦","玉米"):
         return {"success": True, "message": "传入作物类型不正确", "code": 201}
     # 如果传入作物类别正确，则解析图片识别的结果json
     try:
@@ -316,6 +319,18 @@ def get_pests():
                             "result": result}
                 content = json.dumps(response, ensure_ascii=False)
                 return content
+            elif pestsCategory == '玉米':
+                sql = "SELECT * FROM pests WHERE  title IN ('玉米大斑病', '玉米小斑病', '玉米锈病');"
+                result = connectToMysql.query_data_from_mysql(sql)
+                for i in result:
+                    i.update({'accuracy_rate': '0.1'})
+                response = {"success": True,
+                            "message": "success",
+                            "code": 200,
+                            "timestamp": int(time.time()),
+                            "result": result}
+                content = json.dumps(response, ensure_ascii=False)
+                return content
         else:
             # 图片识别的作物类型和传入的作物类型一致，执行rag
             # 创建查询引擎
@@ -323,6 +338,8 @@ def get_pests():
                 index = rice_index
             elif pestsCategory == '小麦':
                 index = wheat_index
+            elif pestsCategory == '玉米':
+                index = corn_index
 
             query_engine = index.as_query_engine(
                 similarity_top_k=Config.TOP_K,
@@ -375,5 +392,6 @@ if __name__ == "__main__":
     embed_model, llm = init_models()
     rice_index = init_storage(Config.RICE_COLLECTION_NAME, Config.RICE_FILE_PATH)
     wheat_index = init_storage(Config.WHEAT_COLLECTION_NAME, Config.WHEAT_FILE_PATH)
+    corn_index = init_storage(Config.CORN_COLLECTION_NAME, Config.CORN_FILE_PATH)
 
-    app.run(host='127.0.0.1', port=5001, debug=True)
+    app.run(host='127.0.0.1', port=5000, debug=True)

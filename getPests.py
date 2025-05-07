@@ -19,4 +19,4 @@ def getPestsData(SearchCategory):
 
 
 if __name__ == '__main__':
-    getPestsData('rice')
+    getPestsData('corn')
