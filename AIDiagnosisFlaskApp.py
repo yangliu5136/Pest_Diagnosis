@@ -251,6 +251,16 @@ def init_storage(data_type, data_file_path):
     print(f"索引加载耗时：{time.time() - start_time:.2f}s")
     return index
 
+@app.route('/test', methods=['GET'])
+def test():
+    response = {"success": True,
+                "message": "success",
+                "code": 200,
+                "timestamp": int(time.time()),
+                "result": "result"}
+    content = json.dumps(response, ensure_ascii=False)
+    print(content)
+    return content
 
 @app.route('/pictureRecognition', methods=['POST'])
 def picture_recognition():
