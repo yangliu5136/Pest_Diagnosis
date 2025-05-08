@@ -398,6 +398,21 @@ def get_pests():
         return {"success": True, "message": "JSON解析错误", "code": 201}
 
 
+
+@app.route('/getDetail', methods=['GET'])
+def get_detail():
+    # 传入病虫害id
+    id = request.args.get('id')
+    sql = "SELECT * FROM pests WHERE id = %s ;"
+    result = connectToMysql.query_data_from_mysql(sql,id)
+    response = {"success": True,
+                "message": "success",
+                "code": 200,
+                "timestamp": int(time.time()),
+                "result": result}
+    content = json.dumps(response, ensure_ascii=False)
+    return content
+
 if __name__ == "__main__":
     embed_model, llm = init_models()
     rice_index = init_storage(Config.RICE_COLLECTION_NAME, Config.RICE_FILE_PATH)
